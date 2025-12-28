@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+label {
+    color: black;
+}
+
+.contoh {
+    color: black;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    border: 1px solid black;
+    width: 60px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 8px 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    background: white;
+}
+
+.input-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.result-item {
+    margin-bottom: 5px;
+}
+
+.back {
+    font-style: italic;
+    color: black;
+    margin-top: 10px;
+}

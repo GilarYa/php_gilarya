@@ -27,14 +27,8 @@ $result = $conn->query($sql);
 
 <div class="container">
     <div class="search-form">
-        <form method="GET" action="">
-            <label>Search by hobi:</label>
-            <input type="text" name="search" value="<?= htmlspecialchars($search) ?>" placeholder="Masukkan hobi...">
-            <input type="submit" value="Cari">
-            <?php if (!empty($search)): ?>
-                <a href="soal2.php">Reset</a>
-            <?php endif; ?>
-        </form>
+        <label>Search by hobi:</label>
+        <input type="text" id="searchInput" placeholder="Ketik untuk mencari..." value="<?= htmlspecialchars($search) ?>">
     </div>
     
     <div class="links">
@@ -43,27 +37,33 @@ $result = $conn->query($sql);
     </div>
     
     <table>
-        <tr>
-            <th>hobi</th>
-            <th>jumlah person</th>
-        </tr>
-        <?php if ($result && $result->num_rows > 0): ?>
-            <?php while ($row = $result->fetch_assoc()): ?>
-                <tr>
-                    <td><?= htmlspecialchars($row['hobi']) ?></td>
-                    <td><?= $row['jumlah_person'] ?></td>
-                </tr>
-            <?php endwhile; ?>
-        <?php else: ?>
+        <thead>
             <tr>
-                <td colspan="2">Tidak ada data ditemukan</td>
+                <th>hobi</th>
+                <th>jumlah person</th>
             </tr>
-        <?php endif; ?>
+        </thead>
+        <tbody id="tableBody">
+            <?php if ($result && $result->num_rows > 0): ?>
+                <?php while ($row = $result->fetch_assoc()): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($row['hobi']) ?></td>
+                        <td><?= $row['jumlah_person'] ?></td>
+                    </tr>
+                <?php endwhile; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="2">Tidak ada data ditemukan</td>
+                </tr>
+            <?php endif; ?>
+        </tbody>
     </table>
 </div>
 
 <?php
 $conn->close();
 ?>
+
+<script src="soal2.js"></script>
 
 </body>

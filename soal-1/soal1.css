@@ -50,9 +50,3 @@ input[type="submit"] {
 .result-item {
     margin-bottom: 5px;
 }
-
-.back {
-    font-style: italic;
-    color: black;
-    margin-top: 10px;
-}

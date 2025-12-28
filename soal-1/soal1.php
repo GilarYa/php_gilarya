@@ -33,6 +33,7 @@ if ($step == 1) {
             </div>
         </form>
     </div>
+    <div><a href="../index.php">Kembali ke Menu</a></div>
 <?php
 } elseif ($step == 2) {
     $baris = (int)$_POST['jumlah_baris'];
@@ -73,8 +74,8 @@ if ($step == 1) {
                 </div>
             <?php endfor; ?>
         <?php endfor; ?>
-        <div class="back"><a href="soal1.php">kembali</a></div>
     </div>
+<div><a href="soal1.php">kembali</a></div>
 <?php
 }
 ?>

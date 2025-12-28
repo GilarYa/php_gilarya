@@ -63,9 +63,3 @@ th {
 td:last-child {
     text-align: right;
 }
-
-.dst {
-    font-style: italic;
-    color: black;
-    margin-top: 10px;
-}

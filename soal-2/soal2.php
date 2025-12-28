@@ -59,6 +59,7 @@ $result = $conn->query($sql);
         </tbody>
     </table>
 </div>
+<div><a href="../index.php">Kembali ke Menu</a></div>
 
 <?php
 $conn->close();

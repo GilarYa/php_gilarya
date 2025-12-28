@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-form label {
+    margin-right: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border: 1px solid black;
+    width: 150px;
+}
+
+.search-form input[type="submit"] {
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    background: white;
+}
+
+.search-form a {
+    margin-left: 10px;
+    color: black;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    color: black;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px dashed black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+.dst {
+    font-style: italic;
+    color: black;
+    margin-top: 10px;
+}
